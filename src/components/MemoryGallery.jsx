@@ -6,20 +6,20 @@ import './MemoryGallery.css';
 // Centralized image list
 const images = [
   // PUBG Memories
-  { src: 'public/PUBG1.jpeg' }, { src: 'public/PUBG2.jpeg' }, { src: 'public/PUBG3.jpeg' },
-  { src: 'public/PUBG4.jpeg' }, { src: 'public/PUBG5.jpeg' }, { src: 'public/PUBG6.jpeg' },
-  { src: 'public/PUBG7.jpeg' }, { src: 'public/PUBG8.jpeg' }, { src: 'public/PUBG9.jpeg' },
+  { src: './PUBG1.jpeg' }, { src: './PUBG2.jpeg' }, { src: './PUBG3.jpeg' },
+  { src: './PUBG4.jpeg' }, { src: './PUBG5.jpeg' }, { src: './PUBG6.jpeg' },
+  { src: './PUBG7.jpeg' }, { src: './PUBG8.jpeg' }, { src: './PUBG9.jpeg' },
   // Fizam & Wana
-  { src: 'public/Fizam.jpeg' }, { src: 'public/Fizam2.jpg' }, { src: 'public/Fizam3.jpg' },
-  { src: 'public/Fizam4.jpg' }, { src: 'public/Fizam5.jpg' }, { src: 'public/Fizam6.jpg' },
-  { src: 'public/Fizam7.jpg' }, { src: 'public/Fizam8.jpg' }, { src: 'public/Fizam9.jpg' },
-  { src: 'public/Fizam10.jpg' }, { src: 'public/Fizam11.png' },
+  { src: './Fizam.jpeg' }, { src: './Fizam2.jpg' }, { src: './Fizam3.jpg' },
+  { src: './Fizam4.jpg' }, { src: './Fizam5.jpg' }, { src: './Fizam6.jpg' },
+  { src: './Fizam7.jpg' }, { src: './Fizam8.jpg' }, { src: './Fizam9.jpg' },
+  { src: './Fizam10.jpg' }, { src: './Fizam11.png' },
   // Wana Special
-  { src: ' public/Wana2.jpeg' }, { src: 'public/Wana3.jpeg' }, { src: 'public/Wana4.jpeg' },
-  { src: 'public/Wana5.jpeg' }, { src: 'public/Wana6.jpeg' }, { src: 'public/Wana7.jpeg' },
-  { src: 'public/Wana8.jpeg' }, { src: 'public/Wana9.jpeg' }, { src: 'public/Wana10.jpeg' },
-  { src: 'public/Wana11.jpeg' }, { src: 'public/Wana12.jpeg' }, { src: 'public/Wana13.jpeg' },
-  { src: 'public/Wana14.jpeg' }, { src: 'public/Wana15.jpeg' },
+  { src: './Wana2.jpeg' }, { src: './Wana3.jpeg' }, { src: './Wana4.jpeg' },
+  { src: './Wana5.jpeg' }, { src: './Wana6.jpeg' }, { src: './Wana7.jpeg' },
+  { src: './Wana8.jpeg' }, { src: './Wana9.jpeg' }, { src: './Wana10.jpeg' },
+  { src: './Wana11.jpeg' }, { src: './Wana12.jpeg' }, { src: './Wana13.jpeg' },
+  { src: './Wana14.jpeg' }, { src: './Wana15.jpeg' },
 ];
 
 const MemoryGallery = () => {
