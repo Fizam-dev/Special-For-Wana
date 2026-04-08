@@ -6,20 +6,20 @@ import './MemoryGallery.css';
 // Centralized image list
 const images = [
   // PUBG Memories
-  { src: '/PUBG1.jpeg' }, { src: '/PUBG2.jpeg' }, { src: '/PUBG3.jpeg' },
-  { src: '/PUBG4.jpeg' }, { src: '/PUBG5.jpeg' }, { src: '/PUBG6.jpeg' },
-  { src: '/PUBG7.jpeg' }, { src: '/PUBG8.jpeg' }, { src: '/PUBG9.jpeg' },
+  { src: 'PUBG1.jpeg' }, { src: 'PUBG2.jpeg' }, { src: 'PUBG3.jpeg' },
+  { src: 'PUBG4.jpeg' }, { src: 'PUBG5.jpeg' }, { src: 'PUBG6.jpeg' },
+  { src: 'PUBG7.jpeg' }, { src: 'PUBG8.jpeg' }, { src: 'PUBG9.jpeg' },
   // Fizam & Wana
-  { src: '/Fizam.jpeg' }, { src: '/Fizam2.jpg' }, { src: '/Fizam3.jpg' },
-  { src: '/Fizam4.jpg' }, { src: '/Fizam5.jpg' }, { src: '/Fizam6.jpg' },
-  { src: '/Fizam7.jpg' }, { src: '/Fizam8.jpg' }, { src: '/Fizam9.jpg' },
-  { src: '/Fizam10.jpg' }, { src: '/Fizam11.png' },
+  { src: 'Fizam.jpeg' }, { src: 'Fizam2.jpg' }, { src: 'Fizam3.jpg' },
+  { src: 'Fizam4.jpg' }, { src: 'Fizam5.jpg' }, { src: 'Fizam6.jpg' },
+  { src: 'Fizam7.jpg' }, { src: 'Fizam8.jpg' }, { src: 'Fizam9.jpg' },
+  { src: 'Fizam10.jpg' }, { src: 'Fizam11.png' },
   // Wana Special
-  { src: '/Wana2.jpeg' }, { src: '/Wana3.jpeg' }, { src: '/Wana4.jpeg' },
-  { src: '/Wana5.jpeg' }, { src: '/Wana6.jpeg' }, { src: '/Wana7.jpeg' },
-  { src: '/Wana8.jpeg' }, { src: '/Wana9.jpeg' }, { src: '/Wana10.jpeg' },
-  { src: '/Wana11.jpeg' }, { src: '/Wana12.jpeg' }, { src: '/Wana13.jpeg' },
-  { src: '/Wana14.jpeg' }, { src: '/Wana15.jpeg' },
+  { src: 'Wana2.jpeg' }, { src: 'Wana3.jpeg' }, { src: 'Wana4.jpeg' },
+  { src: 'Wana5.jpeg' }, { src: 'Wana6.jpeg' }, { src: 'Wana7.jpeg' },
+  { src: 'Wana8.jpeg' }, { src: 'Wana9.jpeg' }, { src: 'Wana10.jpeg' },
+  { src: 'Wana11.jpeg' }, { src: 'Wana12.jpeg' }, { src: 'Wana13.jpeg' },
+  { src: 'Wana14.jpeg' }, { src: 'Wana15.jpeg' },
 ];
 
 const MemoryGallery = () => {

@@ -4,14 +4,14 @@ import { Play, Pause, SkipBack, SkipForward, Volume2, Music } from 'lucide-react
 import './MusicPlayer.css';
 
 const playlist = [
-  { title: '300 Saat', src: '/300-saat.mpeg' },
-  { title: 'Bergema Sampai Selamanya', src: '/Bergema-sampai-selamanya.mpeg' },
-  { title: 'Kota Ini Tak Sama Tanpamu', src: '/kota-ini-tak-sama-tanpamu.mpeg' },
-  { title: 'Kota Ini Tak Sama Tanpamu Pt. 2', src: '/kota-ini-tak-sama-tanpamu-pt2.mpeg' },
-  { title: 'Love Me Not', src: '/love-me-not.mpeg' },
-  { title: 'Masa Kini, Nanti & Lainnya', src: '/masa-kini-masa-nanti-dan-masa-indah-lainnya.mpeg' },
-  { title: 'Penjaga Hati', src: '/penjaga-hati.mpeg' },
-  { title: 'Somebody Pleasure', src: '/somebody-pleasure.mpeg' },
+  { title: '300 Saat', src: '300-saat.mpeg' },
+  { title: 'Bergema Sampai Selamanya', src: 'Bergema-sampai-selamanya.mpeg' },
+  { title: 'Kota Ini Tak Sama Tanpamu', src: 'kota-ini-tak-sama-tanpamu.mpeg' },
+  { title: 'Kota Ini Tak Sama Tanpamu Pt. 2', src: 'kota-ini-tak-sama-tanpamu-pt2.mpeg' },
+  { title: 'Love Me Not', src: 'love-me-not.mpeg' },
+  { title: 'Masa Kini, Nanti & Lainnya', src: 'masa-kini-masa-nanti-dan-masa-indah-lainnya.mpeg' },
+  { title: 'Penjaga Hati', src: 'penjaga-hati.mpeg' },
+  { title: 'Somebody Pleasure', src: 'somebody-pleasure.mpeg' },
 ];
 
 const MusicPlayer = () => {
