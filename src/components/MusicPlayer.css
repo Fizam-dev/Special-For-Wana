@@ -1,0 +1,108 @@
+.radio-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.radio-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 2rem;
+}
+
+.spinning {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.track-info {
+  margin-bottom: 2rem;
+}
+
+.current-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.track-artist {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.visualizer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  height: 60px;
+  margin-bottom: 2rem;
+}
+
+.bar {
+  flex: 1;
+  background: #fff;
+  border-radius: 2px;
+  max-width: 8px;
+}
+
+.controls-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.seek-bar {
+  width: 100%;
+  accent-color: #fff;
+  height: 2px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.play-pause {
+  background: #fff;
+  color: #000;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-pause:hover {
+  background: #eee;
+  transform: scale(1.05) !important;
+}
+
+.playlist-hint {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+}
