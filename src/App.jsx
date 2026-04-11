@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import SurpriseIntro from './components/SurpriseIntro';
-import Navbar from './components/Navbar';
-import HeroBanner from './components/HeroBanner';
-import MovieRow from './components/MovieRow';
-import SoundtrackPlayer from './components/SoundtrackPlayer';
+import WelcomeScreen from './components/WelcomeScreen';
+import MemoryScrapbook from './components/MemoryScrapbook';
+import FloatingPlayer from './components/FloatingPlayer';
 import Secrets from './components/Secrets';
 import './App.css';
 
@@ -23,7 +21,7 @@ function App() {
 
   useEffect(() => {
     if (isUnlocked) {
-      setTimeout(() => setShowContent(true), 800);
+      setTimeout(() => setShowContent(true), 1200);
       window.scrollTo(0, 0);
     }
   }, [isUnlocked]);
@@ -32,40 +30,49 @@ function App() {
     <div className="app">
       <AnimatePresence mode="wait">
         {!isUnlocked ? (
-          <SurpriseIntro key="intro" onUnlock={() => setIsUnlocked(true)} />
+          <WelcomeScreen key="welcome" onEnter={() => setIsUnlocked(true)} />
         ) : (
           <motion.main 
             key="main"
             initial={{ opacity: 0 }}
             animate={{ opacity: showContent ? 1 : 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.5 }}
             className="main-content"
           >
-            <Navbar />
+            <motion.div 
+              style={{ textAlign: 'center', marginBottom: '4rem' }}
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
+              <h1 className="title-font" style={{ fontSize: '3rem', fontStyle: 'italic', marginBottom: '1rem' }}>
+                Wana & Syafizam
+              </h1>
+              <p style={{ color: 'var(--text-muted)' }}>Masa kini, nanti dan masa indah lainnya.</p>
+            </motion.div>
+
+            <MemoryScrapbook 
+              title="Chapter 1: The Battleground" 
+              desc="Tempat di mana magik bermula. Dari drop sama-sama, cover fire sampai life cover."
+              images={pubgImages} 
+            />
             
-            <div id="home">
-              <HeroBanner />
-            </div>
-
-            <div id="series">
-              <MovieRow title="Trending Now: PUBG Days" images={pubgImages} isLargeRow={true} />
-            </div>
+            <MemoryScrapbook 
+              title="Chapter 2: Us" 
+              desc="Setiap gambar ada cerita di sebaliknya. Dan cerita yang paling saya suka adalah yang ada kita berdua."
+              images={fizamImages} 
+            />
             
-            <div id="movies">
-              <MovieRow title="Our Adventures" images={fizamImages} isLargeRow={false} />
-              <MovieRow title="Because You're Special" images={wanaImages} isLargeRow={false} />
-            </div>
+            <MemoryScrapbook 
+              title="Chapter 3: Because You're Special" 
+              desc="Orang yang sentiasa ceriakan hari-hari saya."
+              images={wanaImages} 
+            />
 
-            <SoundtrackPlayer />
+            <Secrets />
 
-            <div id="mylist" style={{ padding: '0 4%' }}>
-              <h2 className="row-title" style={{ paddingLeft: '0', marginBottom: '1rem' }}>Hidden Gems (My List)</h2>
-              <Secrets />
-            </div>
+            <FloatingPlayer />
 
-            <footer className="footer">
-              <p>WanaFlix • Created Specially by Syafizam</p>
-            </footer>
           </motion.main>
         )}
       </AnimatePresence>
