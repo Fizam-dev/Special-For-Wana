@@ -24,10 +24,6 @@ dist-ssr
 *.sw?
 
 # Project files
-public/*.mpeg
-public/*.jpeg
-public/*.jpg
-public/*.png
 # Actually, the user might WANT the images in the repo for a static site, 
 # but they are large. Usually we keep them if it's a small portfolio.
 # I will NOT ignore the images for now as they are the core content.
