@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, SkipBack, SkipForward } from 'lucide-react';
 
+const BASE_URL = import.meta.env.BASE_URL;
 const playlist = [
-  { title: '300 Saat', src: './300-saat.mpeg' },
-  { title: 'Bergema Sampai Selamanya', src: './Bergema-sampai-selamanya.mpeg' },
-  { title: 'Kota Ini Tak Sama Tanpamu', src: './kota-ini-tak-sama-tanpamu.mpeg' },
-  { title: 'Kota Ini Tak Sama Tanpamu Pt. 2', src: './kota-ini-tak-sama-tanpamu-pt2.mpeg' },
-  { title: 'Love Me Not', src: './love-me-not.mpeg' },
-  { title: 'Masa Kini, Nanti & Lainnya', src: './masa-kini-nanti-dan-masa-indah-lainnya.mpeg' },
-  { title: 'Penjaga Hati', src: './penjaga-hati.mpeg' },
-  { title: 'Somebody Pleasure', src: './somebody-pleasure.mpeg' },
+  { title: '300 Saat', src: `${BASE_URL}300-saat.mpeg` },
+  { title: 'Bergema Sampai Selamanya', src: `${BASE_URL}Bergema-sampai-selamanya.mpeg` },
+  { title: 'Kota Ini Tak Sama Tanpamu', src: `${BASE_URL}kota-ini-tak-sama-tanpamu.mpeg` },
+  { title: 'Kota Ini Tak Sama Tanpamu Pt. 2', src: `${BASE_URL}kota-ini-tak-sama-tanpamu-pt2.mpeg` },
+  { title: 'Love Me Not', src: `${BASE_URL}love-me-not.mpeg` },
+  { title: 'Masa Kini, Nanti & Lainnya', src: `${BASE_URL}masa-kini-nanti-dan-masa-indah-lainnya.mpeg` },
+  { title: 'Penjaga Hati', src: `${BASE_URL}penjaga-hati.mpeg` },
+  { title: 'Somebody Pleasure', src: `${BASE_URL}somebody-pleasure.mpeg` },
 ];
 
 const FloatingPlayer = () => {

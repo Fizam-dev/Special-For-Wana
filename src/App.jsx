@@ -7,13 +7,14 @@ import Secrets from './components/Secrets';
 import './App.css';
 
 // Image data
-const pubgImages = Array.from({ length: 9 }, (_, i) => `./PUBG${i + 1}.jpeg`);
+const BASE_URL = import.meta.env.BASE_URL;
+const pubgImages = Array.from({ length: 9 }, (_, i) => `${BASE_URL}PUBG${i + 1}.jpeg`);
 const fizamImages = [
-  './Fizam.jpeg', './Fizam2.jpg', './Fizam3.jpg', './Fizam4.jpg',
-  './Fizam5.jpg', './Fizam6.jpg', './Fizam7.jpg', './Fizam8.jpg',
-  './Fizam9.jpg', './Fizam10.jpg', './Fizam11.png'
+  `${BASE_URL}Fizam.jpeg`, `${BASE_URL}Fizam2.jpg`, `${BASE_URL}Fizam3.jpg`, `${BASE_URL}Fizam4.jpg`,
+  `${BASE_URL}Fizam5.jpg`, `${BASE_URL}Fizam6.jpg`, `${BASE_URL}Fizam7.jpg`, `${BASE_URL}Fizam8.jpg`,
+  `${BASE_URL}Fizam9.jpg`, `${BASE_URL}Fizam10.jpg`, `${BASE_URL}Fizam11.png`
 ];
-const wanaImages = Array.from({ length: 14 }, (_, i) => `./Wana${i + 2}.jpeg`);
+const wanaImages = Array.from({ length: 14 }, (_, i) => `${BASE_URL}Wana${i + 2}.jpeg`);
 
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
